@@ -33,7 +33,7 @@
             this.btn_pixel = new System.Windows.Forms.Button();
             this.btn_lazo = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btn_margarita = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.todo = new System.Windows.Forms.Button();
             this.Ecolor = new System.Windows.Forms.ColorDialog();
@@ -96,11 +96,13 @@
             // 
             // btn_lazo
             // 
-            this.btn_lazo.Location = new System.Drawing.Point(37, 299);
+            this.btn_lazo.BackColor = System.Drawing.Color.White;
+            this.btn_lazo.Location = new System.Drawing.Point(15, 71);
             this.btn_lazo.Name = "btn_lazo";
             this.btn_lazo.Size = new System.Drawing.Size(75, 23);
             this.btn_lazo.TabIndex = 10;
             this.btn_lazo.Text = "lazo";
+            this.btn_lazo.UseVisualStyleBackColor = false;
             this.btn_lazo.Click += new System.EventHandler(this.btn_lazo_Click);
             // 
             // button2
@@ -113,15 +115,16 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // btn_margarita
             // 
-            this.button3.Location = new System.Drawing.Point(37, 358);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "margarita";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btn_margarita.BackColor = System.Drawing.Color.White;
+            this.btn_margarita.Location = new System.Drawing.Point(96, 71);
+            this.btn_margarita.Name = "btn_margarita";
+            this.btn_margarita.Size = new System.Drawing.Size(75, 23);
+            this.btn_margarita.TabIndex = 4;
+            this.btn_margarita.Text = "margarita";
+            this.btn_margarita.UseVisualStyleBackColor = false;
+            this.btn_margarita.Click += new System.EventHandler(this.btn_margarita_Click);
             // 
             // button4
             // 
@@ -409,6 +412,8 @@
             this.grb_box.Controls.Add(this.btn_linea);
             this.grb_box.Controls.Add(this.btn_Circunferencia);
             this.grb_box.Controls.Add(this.btn_pixel);
+            this.grb_box.Controls.Add(this.btn_margarita);
+            this.grb_box.Controls.Add(this.btn_lazo);
             this.grb_box.Location = new System.Drawing.Point(8, 6);
             this.grb_box.Name = "grb_box";
             this.grb_box.Size = new System.Drawing.Size(200, 100);
@@ -452,8 +457,6 @@
             this.Controls.Add(this.tabControl);
             this.Controls.Add(this.todo);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.btn_lazo);
-            this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.Viewport);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -475,7 +478,7 @@
         private System.Windows.Forms.Button btn_pixel;
         private System.Windows.Forms.Button btn_lazo;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btn_margarita;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button todo;
         private System.Windows.Forms.ColorDialog Ecolor;

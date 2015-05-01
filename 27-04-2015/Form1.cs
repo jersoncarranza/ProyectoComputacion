@@ -59,11 +59,7 @@ namespace _27_04_2015
             curva.encender();
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            Curva curva = new Curva(2, 0, 0, 4, Color.Red, Bm, Viewport);
-            curva.encender();
-        }
+       
 
         private void button4_Click(object sender, EventArgs e)
         {
@@ -124,6 +120,16 @@ namespace _27_04_2015
                     Curva curva = new Curva(0, rx, ry, rad_lazo, fondos, Bm, Viewport);
                         curva.encender();
                 break;
+                case 5://Margarita
+                
+                    ModelosMatematicos objMargarita = new ModelosMatematicos();
+                    objMargarita.Transformar(e.X, e.Y, out fx, out fy);
+                    double rad_Mar = Math.Sqrt(Math.Pow((rx - fx), 2) + Math.Pow((ry - fy), 2));
+                    Curva objCurMar = new Curva(2, rx, ry, rad_Mar, Color.Red, Bm, Viewport);
+                    objCurMar.encender();
+                break;
+
+
                     default:
                     break;
             }
@@ -246,6 +252,11 @@ namespace _27_04_2015
         {
             Habilitado = 4;
       
+        }
+
+        private void btn_margarita_Click(object sender, EventArgs e)
+        {
+            Habilitado = 5;
         }
     }
 }
