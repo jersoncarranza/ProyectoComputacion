@@ -1,0 +1,9 @@
+c:\users\windows7\documents\visual studio 2012\Projects\27-04-2015\27-04-2015\bin\Debug\27-04-2015.exe.config
+c:\users\windows7\documents\visual studio 2012\Projects\27-04-2015\27-04-2015\bin\Debug\27-04-2015.exe
+c:\users\windows7\documents\visual studio 2012\Projects\27-04-2015\27-04-2015\bin\Debug\27-04-2015.pdb
+c:\users\windows7\documents\visual studio 2012\Projects\27-04-2015\27-04-2015\obj\Debug\27-04-2015.csprojResolveAssemblyReference.cache
+c:\users\windows7\documents\visual studio 2012\Projects\27-04-2015\27-04-2015\obj\Debug\_27_04_2015.Properties.Resources.resources
+c:\users\windows7\documents\visual studio 2012\Projects\27-04-2015\27-04-2015\obj\Debug\27-04-2015.csproj.GenerateResource.Cache
+c:\users\windows7\documents\visual studio 2012\Projects\27-04-2015\27-04-2015\obj\Debug\27-04-2015.exe
+c:\users\windows7\documents\visual studio 2012\Projects\27-04-2015\27-04-2015\obj\Debug\27-04-2015.pdb
+C:\Users\Windows7\Documents\Visual Studio 2012\Projects\27-04-2015\27-04-2015\obj\Debug\_27_04_2015.Form_ComGra.resources
