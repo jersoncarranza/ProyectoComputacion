@@ -32,9 +32,9 @@
             this.Viewport = new System.Windows.Forms.PictureBox();
             this.btn_pixel = new System.Windows.Forms.Button();
             this.btn_lazo = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btn_estrellla = new System.Windows.Forms.Button();
             this.btn_margarita = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btn_lemisaca = new System.Windows.Forms.Button();
             this.todo = new System.Windows.Forms.Button();
             this.Ecolor = new System.Windows.Forms.ColorDialog();
             this.btn_EligirColor = new System.Windows.Forms.Button();
@@ -72,9 +72,10 @@
             // 
             // Viewport
             // 
-            this.Viewport.BackColor = System.Drawing.SystemColors.ControlText;
+            this.Viewport.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Viewport.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.Viewport.Location = new System.Drawing.Point(196, 153);
+            this.Viewport.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Viewport.Location = new System.Drawing.Point(215, 168);
             this.Viewport.Name = "Viewport";
             this.Viewport.Size = new System.Drawing.Size(600, 400);
             this.Viewport.TabIndex = 0;
@@ -86,9 +87,9 @@
             // btn_pixel
             // 
             this.btn_pixel.BackColor = System.Drawing.Color.White;
-            this.btn_pixel.Location = new System.Drawing.Point(96, 19);
+            this.btn_pixel.Location = new System.Drawing.Point(110, 19);
             this.btn_pixel.Name = "btn_pixel";
-            this.btn_pixel.Size = new System.Drawing.Size(34, 29);
+            this.btn_pixel.Size = new System.Drawing.Size(49, 46);
             this.btn_pixel.TabIndex = 1;
             this.btn_pixel.Text = "*";
             this.btn_pixel.UseVisualStyleBackColor = false;
@@ -97,54 +98,58 @@
             // btn_lazo
             // 
             this.btn_lazo.BackColor = System.Drawing.Color.White;
-            this.btn_lazo.Location = new System.Drawing.Point(15, 71);
+            this.btn_lazo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_lazo.BackgroundImage")));
+            this.btn_lazo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_lazo.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btn_lazo.Location = new System.Drawing.Point(58, 71);
             this.btn_lazo.Name = "btn_lazo";
-            this.btn_lazo.Size = new System.Drawing.Size(75, 23);
+            this.btn_lazo.Size = new System.Drawing.Size(46, 32);
             this.btn_lazo.TabIndex = 10;
-            this.btn_lazo.Text = "lazo";
             this.btn_lazo.UseVisualStyleBackColor = false;
             this.btn_lazo.Click += new System.EventHandler(this.btn_lazo_Click);
             // 
-            // button2
+            // btn_estrellla
             // 
-            this.button2.Location = new System.Drawing.Point(27, 192);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "h";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btn_estrellla.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_estrellla.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_estrellla.BackgroundImage")));
+            this.btn_estrellla.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_estrellla.Location = new System.Drawing.Point(6, 71);
+            this.btn_estrellla.Name = "btn_estrellla";
+            this.btn_estrellla.Size = new System.Drawing.Size(46, 32);
+            this.btn_estrellla.TabIndex = 3;
+            this.btn_estrellla.UseVisualStyleBackColor = false;
+            this.btn_estrellla.Click += new System.EventHandler(this.btn_estrellla_Click);
             // 
             // btn_margarita
             // 
             this.btn_margarita.BackColor = System.Drawing.Color.White;
-            this.btn_margarita.Location = new System.Drawing.Point(96, 71);
+            this.btn_margarita.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_margarita.BackgroundImage")));
+            this.btn_margarita.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_margarita.Location = new System.Drawing.Point(113, 71);
             this.btn_margarita.Name = "btn_margarita";
-            this.btn_margarita.Size = new System.Drawing.Size(75, 23);
+            this.btn_margarita.Size = new System.Drawing.Size(46, 32);
             this.btn_margarita.TabIndex = 4;
-            this.btn_margarita.Text = "margarita";
             this.btn_margarita.UseVisualStyleBackColor = false;
             this.btn_margarita.Click += new System.EventHandler(this.btn_margarita_Click);
             // 
-            // button4
+            // btn_lemisaca
             // 
-            this.button4.Location = new System.Drawing.Point(37, 445);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 5;
-            this.button4.Text = "lemiscata";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.btn_lemisaca.BackColor = System.Drawing.Color.White;
+            this.btn_lemisaca.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_lemisaca.BackgroundImage")));
+            this.btn_lemisaca.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_lemisaca.Location = new System.Drawing.Point(165, 74);
+            this.btn_lemisaca.Name = "btn_lemisaca";
+            this.btn_lemisaca.Size = new System.Drawing.Size(46, 29);
+            this.btn_lemisaca.TabIndex = 5;
+            this.btn_lemisaca.UseVisualStyleBackColor = false;
+            this.btn_lemisaca.Click += new System.EventHandler(this.btn_lemisaca_Click);
             // 
             // todo
             // 
-            this.todo.Location = new System.Drawing.Point(27, 231);
+            this.todo.Location = new System.Drawing.Point(0, 0);
             this.todo.Name = "todo";
             this.todo.Size = new System.Drawing.Size(75, 23);
-            this.todo.TabIndex = 6;
-            this.todo.Text = "todo";
-            this.todo.UseVisualStyleBackColor = true;
-            this.todo.Click += new System.EventHandler(this.todo_Click);
+            this.todo.TabIndex = 10;
             // 
             // Ecolor
             // 
@@ -167,9 +172,9 @@
             this.btn_Circunferencia.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_Circunferencia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Circunferencia.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btn_Circunferencia.Location = new System.Drawing.Point(15, 19);
+            this.btn_Circunferencia.Location = new System.Drawing.Point(6, 19);
             this.btn_Circunferencia.Name = "btn_Circunferencia";
-            this.btn_Circunferencia.Size = new System.Drawing.Size(33, 29);
+            this.btn_Circunferencia.Size = new System.Drawing.Size(46, 46);
             this.btn_Circunferencia.TabIndex = 8;
             this.btn_Circunferencia.UseVisualStyleBackColor = false;
             this.btn_Circunferencia.Click += new System.EventHandler(this.btn_Circunferencia_Click);
@@ -409,14 +414,16 @@
             // 
             // grb_box
             // 
+            this.grb_box.Controls.Add(this.btn_pixel);
+            this.grb_box.Controls.Add(this.btn_estrellla);
+            this.grb_box.Controls.Add(this.btn_lemisaca);
             this.grb_box.Controls.Add(this.btn_linea);
             this.grb_box.Controls.Add(this.btn_Circunferencia);
-            this.grb_box.Controls.Add(this.btn_pixel);
             this.grb_box.Controls.Add(this.btn_margarita);
             this.grb_box.Controls.Add(this.btn_lazo);
             this.grb_box.Location = new System.Drawing.Point(8, 6);
             this.grb_box.Name = "grb_box";
-            this.grb_box.Size = new System.Drawing.Size(200, 100);
+            this.grb_box.Size = new System.Drawing.Size(319, 109);
             this.grb_box.TabIndex = 10;
             this.grb_box.TabStop = false;
             this.grb_box.Text = "figuras";
@@ -428,9 +435,9 @@
             this.btn_linea.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_linea.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_linea.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btn_linea.Location = new System.Drawing.Point(57, 19);
+            this.btn_linea.Location = new System.Drawing.Point(58, 19);
             this.btn_linea.Name = "btn_linea";
-            this.btn_linea.Size = new System.Drawing.Size(33, 29);
+            this.btn_linea.Size = new System.Drawing.Size(46, 46);
             this.btn_linea.TabIndex = 9;
             this.btn_linea.UseVisualStyleBackColor = false;
             this.btn_linea.Click += new System.EventHandler(this.btn_linea_Click);
@@ -456,8 +463,6 @@
             this.ClientSize = new System.Drawing.Size(1064, 613);
             this.Controls.Add(this.tabControl);
             this.Controls.Add(this.todo);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.Viewport);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form_ComGra";
@@ -477,9 +482,9 @@
         private System.Windows.Forms.PictureBox Viewport;
         private System.Windows.Forms.Button btn_pixel;
         private System.Windows.Forms.Button btn_lazo;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btn_estrellla;
         private System.Windows.Forms.Button btn_margarita;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btn_lemisaca;
         private System.Windows.Forms.Button todo;
         private System.Windows.Forms.ColorDialog Ecolor;
         private System.Windows.Forms.Button btn_EligirColor;

@@ -15,7 +15,7 @@ namespace _27_04_2015
     public partial class Form_ComGra : Form
     {
         Bitmap Bm;
-        Color fondos;//El color a elegir
+        Color ColorBorde;//El color a elegir
         
         private int Habilitado = 0;
         // aka se almacean las coordenadas inciales y finales
@@ -32,7 +32,7 @@ namespace _27_04_2015
             Bm = new Bitmap(600, 400);
             Viewport.Image = Bm;
             
-            fondos = Color.Yellow ;
+            ColorBorde = Color.Black ;
 
             //eventos para ke el mouse pueda seleccionar una coordenada
             Viewport.MouseDown += new MouseEventHandler(Viewport_MouseDown);
@@ -50,40 +50,13 @@ namespace _27_04_2015
         {
             Habilitado = 3; //pixel
         }
-
-      
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Curva curva = new Curva(1, 0, 0, 2, Color.Red, Bm, Viewport);
-            curva.encender();
-        }
-
-       
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            Curva curva = new Curva(3, 0, 0, 4, Color.Red, Bm, Viewport);
-            curva.encender();
-        }
-
-        private void todo_Click(object sender, EventArgs e)
-        {
-            Curva curva = new Curva(0, 4, -3, 2, fondos, Bm, Viewport);
-            curva.encender();
-
-            Curva curva2 = new Curva(1, 11, 0, 2, fondos, Bm, Viewport);
-            curva2.encender();
-
-            Curva curva3 = new Curva(2, -3, 0, 2, fondos, Bm, Viewport);
-            curva3.encender();
-        }
+   
 
         private void color_Click(object sender, EventArgs e)
         {
             ColorDialog objC = new ColorDialog();
             objC.ShowDialog();
-            fondos = objC.Color;
+            ColorBorde = objC.Color;
         }
 
         private void Viewport_MouseUp(object sender, MouseEventArgs e)
@@ -93,7 +66,7 @@ namespace _27_04_2015
                 case 1://segmento
                     ModelosMatematicos mod = new ModelosMatematicos();
                     mod.Transformar(e.X, e.Y, out fx, out fy);
-                    Segmento objseg = new Segmento(rx, ry, fx, fy, fondos, Bm, Viewport);
+                    Segmento objseg = new Segmento(rx, ry, fx, fy, ColorBorde, Bm, Viewport);
                     objseg.encender();
                 break;
 
@@ -101,7 +74,7 @@ namespace _27_04_2015
                     ModelosMatematicos mol = new ModelosMatematicos();
                     mol.Transformar(e.X, e.Y, out fx, out fy);
                     double rad = Math.Sqrt(Math.Pow((rx - fx), 2) + Math.Pow((ry - fy), 2));
-                    Circunferencia cir = new Circunferencia(rx, ry, rad, fondos, Bm, Viewport);
+                    Circunferencia cir = new Circunferencia(rx, ry, rad, ColorBorde, Bm, Viewport);
                     cir.Radio = rad;
                     cir.encender();
                 break;
@@ -109,7 +82,7 @@ namespace _27_04_2015
                 case 3: //pixel
                      ModelosMatematicos objpix = new ModelosMatematicos();
                     objpix.Transformar(e.X, e.Y, out fx, out fy);
-                    Vector obj = new Vector(fx, fy, fondos, Bm, Viewport);
+                    Vector obj = new Vector(fx, fy, ColorBorde, Bm, Viewport);
                     obj.encender();
                 break;
 
@@ -117,16 +90,31 @@ namespace _27_04_2015
                     ModelosMatematicos objlazo = new ModelosMatematicos();
                     objlazo.Transformar(e.X, e.Y, out fx, out fy);
                     double rad_lazo = Math.Sqrt(Math.Pow((rx - fx), 2) + Math.Pow((ry - fy), 2));
-                    Curva curva = new Curva(0, rx, ry, rad_lazo, fondos, Bm, Viewport);
-                        curva.encender();
+                    Curva curva = new Curva(0, rx, ry, rad_lazo, ColorBorde, Bm, Viewport);
+                    curva.encender();
                 break;
                 case 5://Margarita
                 
                     ModelosMatematicos objMargarita = new ModelosMatematicos();
                     objMargarita.Transformar(e.X, e.Y, out fx, out fy);
                     double rad_Mar = Math.Sqrt(Math.Pow((rx - fx), 2) + Math.Pow((ry - fy), 2));
-                    Curva objCurMar = new Curva(2, rx, ry, rad_Mar, Color.Red, Bm, Viewport);
+                    Curva objCurMar = new Curva(2, rx, ry, rad_Mar, ColorBorde, Bm, Viewport);
                     objCurMar.encender();
+                break;
+                case 6://Estrella
+                    ModelosMatematicos obj_Est = new ModelosMatematicos();
+                    obj_Est.Transformar(e.X, e.Y, out fx, out fy);
+                    double rad_Est = Math.Sqrt(Math.Pow((rx - fx), 2) + Math.Pow((ry - fy), 2));
+                    Curva objCurEst = new Curva(1, rx, ry, rad_Est, ColorBorde, Bm, Viewport);
+                    objCurEst.encender();
+                break;
+
+                case 7://Estrella
+                ModelosMatematicos obj_Lem = new ModelosMatematicos();
+                obj_Lem.Transformar(e.X, e.Y, out fx, out fy);
+                double rad_Lem = Math.Sqrt(Math.Pow((rx - fx), 2) + Math.Pow((ry - fy), 2));
+                Curva objCurLem = new Curva(3, rx, ry, rad_Lem, ColorBorde, Bm, Viewport);
+                objCurLem.encender();
                 break;
 
 
@@ -155,92 +143,92 @@ namespace _27_04_2015
 
         private void btn_ColorBlanco_Click(object sender, EventArgs e)
         {
-            fondos= Color.White;
+            ColorBorde= Color.White;
         }
 
         private void btn_silver_Click(object sender, EventArgs e)
         {
-            fondos = Color.Silver;
+            ColorBorde = Color.Silver;
         }
 
         private void btn_Sienna_Click(object sender, EventArgs e)
         {
-            fondos = Color.Sienna;
+            ColorBorde = Color.Sienna;
         }
 
         private void btn_LightSalmon_Click(object sender, EventArgs e)
         {
-            fondos = Color.LightSalmon;
+            ColorBorde = Color.LightSalmon;
         }
 
         private void btn_DarkOrange_Click(object sender, EventArgs e)
         {
-            fondos = Color.DarkOrange;
+            ColorBorde = Color.DarkOrange;
         }
 
         private void btn_azul_Click(object sender, EventArgs e)
         {
-            fondos = Color.Blue;
+            ColorBorde = Color.Blue;
         }
 
         private void btn_Khaki_Click(object sender, EventArgs e)
         {
-            fondos = Color.Khaki;
+            ColorBorde = Color.Khaki;
         }
 
         private void btn_PaleGreen_Click(object sender, EventArgs e)
         {
-            fondos = Color.PaleGreen;
+            ColorBorde = Color.PaleGreen;
         }
 
         private void btn_Turquoise_Click(object sender, EventArgs e)
         {
-            fondos = Color.Turquoise;
+            ColorBorde = Color.Turquoise;
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            fondos = Color.Black;
+            ColorBorde = Color.Black;
         }
 
         private void btn_DimGray_Click(object sender, EventArgs e)
         {
-            fondos = Color.DimGray;
+            ColorBorde = Color.DimGray;
         }
 
         private void btn_Maroon_Click(object sender, EventArgs e)
         {
-            fondos = Color.Maroon;
+            ColorBorde = Color.Maroon;
         }
 
         private void btn_red_Click(object sender, EventArgs e)
         {
-            fondos = Color.Red;
+            ColorBorde = Color.Red;
         }
 
         private void btn_NavajoWhite_Click(object sender, EventArgs e)
         {
-            fondos = Color.NavajoWhite;
+            ColorBorde = Color.NavajoWhite;
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            fondos = Color.Yellow;
+            ColorBorde = Color.Yellow;
         }
 
         private void btn_Green_Click(object sender, EventArgs e)
         {
-            fondos = Color.Green;
+            ColorBorde = Color.Green;
         }
 
         private void btn_RoyalBlue_Click(object sender, EventArgs e)
         {
-            fondos = Color.RoyalBlue;
+            ColorBorde = Color.RoyalBlue;
         }
 
         private void btn_DarkViolet_Click(object sender, EventArgs e)
         {
-            fondos = Color.DarkViolet;
+            ColorBorde = Color.DarkViolet;
         }
 
         private void btn_linea_Click(object sender, EventArgs e)
@@ -257,6 +245,16 @@ namespace _27_04_2015
         private void btn_margarita_Click(object sender, EventArgs e)
         {
             Habilitado = 5;
+        }
+
+        private void btn_estrellla_Click(object sender, EventArgs e)
+        {
+            Habilitado = 6;
+        }
+
+        private void btn_lemisaca_Click(object sender, EventArgs e)
+        {
+            Habilitado = 7;
         }
     }
 }
