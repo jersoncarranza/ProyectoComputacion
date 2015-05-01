@@ -63,11 +63,15 @@
             this.grb_box = new System.Windows.Forms.GroupBox();
             this.btn_linea = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.grb_letras = new System.Windows.Forms.GroupBox();
+            this.btn_ocho = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Viewport)).BeginInit();
             this.tabControl.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.grb_paleta.SuspendLayout();
             this.grb_box.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            this.grb_letras.SuspendLayout();
             this.SuspendLayout();
             // 
             // Viewport
@@ -447,6 +451,7 @@
             this.tabPage2.BackColor = System.Drawing.Color.Gray;
             this.tabPage2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.tabPage2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.tabPage2.Controls.Add(this.grb_letras);
             this.tabPage2.ImageKey = "(none)";
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
@@ -454,6 +459,26 @@
             this.tabPage2.Size = new System.Drawing.Size(1056, 121);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Letra";
+            // 
+            // grb_letras
+            // 
+            this.grb_letras.Controls.Add(this.btn_ocho);
+            this.grb_letras.Location = new System.Drawing.Point(49, 6);
+            this.grb_letras.Name = "grb_letras";
+            this.grb_letras.Size = new System.Drawing.Size(200, 100);
+            this.grb_letras.TabIndex = 0;
+            this.grb_letras.TabStop = false;
+            this.grb_letras.Text = "Letra";
+            // 
+            // btn_ocho
+            // 
+            this.btn_ocho.BackColor = System.Drawing.Color.White;
+            this.btn_ocho.Location = new System.Drawing.Point(37, 43);
+            this.btn_ocho.Name = "btn_ocho";
+            this.btn_ocho.Size = new System.Drawing.Size(23, 23);
+            this.btn_ocho.TabIndex = 0;
+            this.btn_ocho.Text = "8";
+            this.btn_ocho.UseVisualStyleBackColor = false;
             // 
             // Form_ComGra
             // 
@@ -473,6 +498,8 @@
             this.tabPage1.ResumeLayout(false);
             this.grb_paleta.ResumeLayout(false);
             this.grb_box.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
+            this.grb_letras.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -513,6 +540,8 @@
         private System.Windows.Forms.Button btn_RoyalBlue;
         private System.Windows.Forms.Button btn_DarkViolet;
         private System.Windows.Forms.Button btn_linea;
+        private System.Windows.Forms.GroupBox grb_letras;
+        private System.Windows.Forms.Button btn_ocho;
     }
 }
 
