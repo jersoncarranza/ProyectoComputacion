@@ -120,7 +120,8 @@ namespace _27_04_2015
                 case 4://lazo 
                     ModelosMatematicos objlazo = new ModelosMatematicos();
                     objlazo.Transformar(e.X, e.Y, out fx, out fy);
-                    Curva curva = new Curva(0, 2, -3, 2, fondos, Bm, Viewport);
+                    double rad_lazo = Math.Sqrt(Math.Pow((rx - fx), 2) + Math.Pow((ry - fy), 2));
+                    Curva curva = new Curva(0, rx, ry, rad_lazo, fondos, Bm, Viewport);
                         curva.encender();
                 break;
                     default:
