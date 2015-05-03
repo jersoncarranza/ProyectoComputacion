@@ -68,7 +68,7 @@ namespace _27_04_2015
 
         public override void encender()
         {
-            double t = 0, dt = 0.003;
+            double t = 0, dt = 0.0005;
             Vector seg = new Vector(0, 0, scl, Sbit, Slienzo);//aki quede los parametros
             do
             {

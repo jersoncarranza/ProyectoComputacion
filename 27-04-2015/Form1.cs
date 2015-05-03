@@ -149,6 +149,48 @@ namespace _27_04_2015
 
                 
                 break;
+                case 10:
+                    //Dibuja la linea
+                    ModelosMatematicos objSegPen = new ModelosMatematicos();
+                    objSegPen.Transformar(e.X, e.Y, out fx, out fy);
+
+                    double rxa = rx;
+                    double rya = ry;
+                    double fxa = fx;
+                    double fya = fy;
+
+                    Segmento objseg2 = new Segmento(rxa, rya, fxa, fya, ColorBorde, Bm, Viewport);
+                    objseg2.encender();
+
+
+                   //Dibuja la pendiente
+                    double midx = (rxa + fxa) / 2;
+                    double midy = (rya + fya) / 2;
+                    double pendiente = ((fya - rya) / (fxa - rxa));
+                    
+                    pendiente = (1 / pendiente) * -1;
+                    rxa = 100;
+                    rya =(pendiente *100);
+                    fxa = midx;
+                    fya = midy;
+                 
+                    Segmento objsegpend = new Segmento(rxa, rya, fxa, fya, ColorBorde, Bm, Viewport);
+                    objsegpend.encender();
+                     
+                   
+                    rxa = -100;
+                    rya =(pendiente * -100);
+                    fxa = midx;
+                    fya = midy;
+
+                    Segmento objpab = new Segmento(rxa, rya, fxa, fya, ColorBorde, Bm, Viewport);
+                    objpab.encender();
+                    //objsegpend.encender();
+
+                   
+
+
+                break;
 
 
 
@@ -300,5 +342,18 @@ namespace _27_04_2015
         {
             Habilitado = 9;
         }
+
+        private void btn_segLinea_Click(object sender, EventArgs e)
+        {
+            Habilitado = 10;
+        }
+
+        private void creditos_Click(object sender, EventArgs e)
+        {
+            frm_ayuda frm = new frm_ayuda();
+            frm.Show();
+        }
+
+      
     }
 }

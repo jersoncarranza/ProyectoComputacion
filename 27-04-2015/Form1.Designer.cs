@@ -41,14 +41,6 @@
             this.btn_Circunferencia = new System.Windows.Forms.Button();
             this.tabControl = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.grb_box = new System.Windows.Forms.GroupBox();
-            this.btn_linea = new System.Windows.Forms.Button();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.grb_letras = new System.Windows.Forms.GroupBox();
-            this.btn_ocho = new System.Windows.Forms.Button();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.grb_numeros = new System.Windows.Forms.GroupBox();
-            this.btn_2 = new System.Windows.Forms.Button();
             this.grb_paleta = new System.Windows.Forms.GroupBox();
             this.btn_DarkViolet = new System.Windows.Forms.Button();
             this.btn_RoyalBlue = new System.Windows.Forms.Button();
@@ -68,15 +60,24 @@
             this.btn_silver = new System.Windows.Forms.Button();
             this.btn_azul = new System.Windows.Forms.Button();
             this.btn_ColorBlanco = new System.Windows.Forms.Button();
+            this.grb_box = new System.Windows.Forms.GroupBox();
+            this.btn_linea = new System.Windows.Forms.Button();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.grb_letras = new System.Windows.Forms.GroupBox();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.grb_numeros = new System.Windows.Forms.GroupBox();
             this.btn_3 = new System.Windows.Forms.Button();
+            this.btn_2 = new System.Windows.Forms.Button();
+            this.btn_segLinea = new System.Windows.Forms.Button();
+            this.creditos = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Viewport)).BeginInit();
             this.tabControl.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.grb_paleta.SuspendLayout();
             this.grb_box.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.grb_numeros.SuspendLayout();
-            this.grb_paleta.SuspendLayout();
             this.SuspendLayout();
             // 
             // Viewport
@@ -84,7 +85,7 @@
             this.Viewport.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Viewport.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.Viewport.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Viewport.Location = new System.Drawing.Point(336, 153);
+            this.Viewport.Location = new System.Drawing.Point(276, 169);
             this.Viewport.Name = "Viewport";
             this.Viewport.Size = new System.Drawing.Size(600, 400);
             this.Viewport.TabIndex = 0;
@@ -213,101 +214,6 @@
             this.tabPage1.Size = new System.Drawing.Size(1056, 121);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "2d";
-            // 
-            // grb_box
-            // 
-            this.grb_box.Controls.Add(this.btn_pixel);
-            this.grb_box.Controls.Add(this.btn_estrellla);
-            this.grb_box.Controls.Add(this.btn_lemisaca);
-            this.grb_box.Controls.Add(this.btn_linea);
-            this.grb_box.Controls.Add(this.btn_Circunferencia);
-            this.grb_box.Controls.Add(this.btn_margarita);
-            this.grb_box.Controls.Add(this.btn_lazo);
-            this.grb_box.Location = new System.Drawing.Point(8, 6);
-            this.grb_box.Name = "grb_box";
-            this.grb_box.Size = new System.Drawing.Size(319, 109);
-            this.grb_box.TabIndex = 10;
-            this.grb_box.TabStop = false;
-            this.grb_box.Text = "figuras";
-            // 
-            // btn_linea
-            // 
-            this.btn_linea.BackColor = System.Drawing.Color.White;
-            this.btn_linea.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_linea.BackgroundImage")));
-            this.btn_linea.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_linea.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_linea.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btn_linea.Location = new System.Drawing.Point(58, 19);
-            this.btn_linea.Name = "btn_linea";
-            this.btn_linea.Size = new System.Drawing.Size(46, 46);
-            this.btn_linea.TabIndex = 9;
-            this.btn_linea.UseVisualStyleBackColor = false;
-            this.btn_linea.Click += new System.EventHandler(this.btn_linea_Click);
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.BackColor = System.Drawing.Color.Gray;
-            this.tabPage2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.tabPage2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.tabPage2.Controls.Add(this.grb_letras);
-            this.tabPage2.ImageKey = "(none)";
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1056, 121);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Letra";
-            // 
-            // grb_letras
-            // 
-            this.grb_letras.Location = new System.Drawing.Point(49, 6);
-            this.grb_letras.Name = "grb_letras";
-            this.grb_letras.Size = new System.Drawing.Size(200, 100);
-            this.grb_letras.TabIndex = 0;
-            this.grb_letras.TabStop = false;
-            this.grb_letras.Text = "Letra";
-            // 
-            // btn_ocho
-            // 
-            this.btn_ocho.BackColor = System.Drawing.Color.White;
-            this.btn_ocho.Location = new System.Drawing.Point(77, 20);
-            this.btn_ocho.Name = "btn_ocho";
-            this.btn_ocho.Size = new System.Drawing.Size(23, 23);
-            this.btn_ocho.TabIndex = 0;
-            this.btn_ocho.Text = "2";
-            this.btn_ocho.UseVisualStyleBackColor = false;
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.Controls.Add(this.grb_numeros);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(1056, 121);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Números";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // grb_numeros
-            // 
-            this.grb_numeros.Controls.Add(this.btn_ocho);
-            this.grb_numeros.Controls.Add(this.btn_3);
-            this.grb_numeros.Controls.Add(this.btn_2);
-            this.grb_numeros.Location = new System.Drawing.Point(20, 23);
-            this.grb_numeros.Name = "grb_numeros";
-            this.grb_numeros.Size = new System.Drawing.Size(194, 95);
-            this.grb_numeros.TabIndex = 0;
-            this.grb_numeros.TabStop = false;
-            this.grb_numeros.Text = "Numeros";
-            // 
-            // btn_2
-            // 
-            this.btn_2.Location = new System.Drawing.Point(30, 20);
-            this.btn_2.Name = "btn_2";
-            this.btn_2.Size = new System.Drawing.Size(30, 23);
-            this.btn_2.TabIndex = 0;
-            this.btn_2.Text = "2";
-            this.btn_2.UseVisualStyleBackColor = true;
-            this.btn_2.Click += new System.EventHandler(this.btn_6_Click);
             // 
             // grb_paleta
             // 
@@ -517,16 +423,123 @@
             this.btn_ColorBlanco.UseVisualStyleBackColor = false;
             this.btn_ColorBlanco.Click += new System.EventHandler(this.btn_ColorBlanco_Click);
             // 
+            // grb_box
+            // 
+            this.grb_box.Controls.Add(this.btn_pixel);
+            this.grb_box.Controls.Add(this.btn_segLinea);
+            this.grb_box.Controls.Add(this.btn_estrellla);
+            this.grb_box.Controls.Add(this.btn_lemisaca);
+            this.grb_box.Controls.Add(this.btn_linea);
+            this.grb_box.Controls.Add(this.btn_Circunferencia);
+            this.grb_box.Controls.Add(this.btn_margarita);
+            this.grb_box.Controls.Add(this.btn_lazo);
+            this.grb_box.Location = new System.Drawing.Point(8, 6);
+            this.grb_box.Name = "grb_box";
+            this.grb_box.Size = new System.Drawing.Size(319, 109);
+            this.grb_box.TabIndex = 10;
+            this.grb_box.TabStop = false;
+            this.grb_box.Text = "figuras";
+            // 
+            // btn_linea
+            // 
+            this.btn_linea.BackColor = System.Drawing.Color.White;
+            this.btn_linea.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_linea.BackgroundImage")));
+            this.btn_linea.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_linea.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_linea.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.btn_linea.Location = new System.Drawing.Point(58, 19);
+            this.btn_linea.Name = "btn_linea";
+            this.btn_linea.Size = new System.Drawing.Size(46, 46);
+            this.btn_linea.TabIndex = 9;
+            this.btn_linea.UseVisualStyleBackColor = false;
+            this.btn_linea.Click += new System.EventHandler(this.btn_linea_Click);
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.BackColor = System.Drawing.Color.Gray;
+            this.tabPage2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.tabPage2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.tabPage2.Controls.Add(this.grb_letras);
+            this.tabPage2.ImageKey = "(none)";
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(1056, 121);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Letra";
+            // 
+            // grb_letras
+            // 
+            this.grb_letras.Location = new System.Drawing.Point(49, 6);
+            this.grb_letras.Name = "grb_letras";
+            this.grb_letras.Size = new System.Drawing.Size(200, 100);
+            this.grb_letras.TabIndex = 0;
+            this.grb_letras.TabStop = false;
+            this.grb_letras.Text = "Letra";
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.grb_numeros);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Size = new System.Drawing.Size(1056, 121);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Números";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // grb_numeros
+            // 
+            this.grb_numeros.Controls.Add(this.btn_3);
+            this.grb_numeros.Controls.Add(this.btn_2);
+            this.grb_numeros.Location = new System.Drawing.Point(20, 23);
+            this.grb_numeros.Name = "grb_numeros";
+            this.grb_numeros.Size = new System.Drawing.Size(194, 95);
+            this.grb_numeros.TabIndex = 0;
+            this.grb_numeros.TabStop = false;
+            this.grb_numeros.Text = "Numeros";
+            // 
             // btn_3
             // 
             this.btn_3.BackColor = System.Drawing.Color.White;
-            this.btn_3.Location = new System.Drawing.Point(106, 20);
+            this.btn_3.Location = new System.Drawing.Point(57, 19);
             this.btn_3.Name = "btn_3";
             this.btn_3.Size = new System.Drawing.Size(23, 23);
             this.btn_3.TabIndex = 1;
             this.btn_3.Text = "3";
-            this.btn_3.UseVisualStyleBackColor = true;
+            this.btn_3.UseVisualStyleBackColor = false;
             this.btn_3.Click += new System.EventHandler(this.btn_3_Click);
+            // 
+            // btn_2
+            // 
+            this.btn_2.BackColor = System.Drawing.Color.White;
+            this.btn_2.Location = new System.Drawing.Point(30, 20);
+            this.btn_2.Name = "btn_2";
+            this.btn_2.Size = new System.Drawing.Size(21, 23);
+            this.btn_2.TabIndex = 0;
+            this.btn_2.Text = "2";
+            this.btn_2.UseVisualStyleBackColor = false;
+            this.btn_2.Click += new System.EventHandler(this.btn_6_Click);
+            // 
+            // btn_segLinea
+            // 
+            this.btn_segLinea.BackColor = System.Drawing.Color.White;
+            this.btn_segLinea.Location = new System.Drawing.Point(217, 71);
+            this.btn_segLinea.Name = "btn_segLinea";
+            this.btn_segLinea.Size = new System.Drawing.Size(42, 32);
+            this.btn_segLinea.TabIndex = 11;
+            this.btn_segLinea.Text = "-/-";
+            this.btn_segLinea.UseVisualStyleBackColor = false;
+            this.btn_segLinea.Click += new System.EventHandler(this.btn_segLinea_Click);
+            // 
+            // creditos
+            // 
+            this.creditos.Location = new System.Drawing.Point(977, 578);
+            this.creditos.Name = "creditos";
+            this.creditos.Size = new System.Drawing.Size(75, 23);
+            this.creditos.TabIndex = 12;
+            this.creditos.Text = "Creditos";
+            this.creditos.UseVisualStyleBackColor = true;
+            this.creditos.Click += new System.EventHandler(this.creditos_Click);
             // 
             // Form_ComGra
             // 
@@ -534,6 +547,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(1064, 613);
+            this.Controls.Add(this.creditos);
             this.Controls.Add(this.tabControl);
             this.Controls.Add(this.todo);
             this.Controls.Add(this.Viewport);
@@ -544,11 +558,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.Viewport)).EndInit();
             this.tabControl.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            this.grb_paleta.ResumeLayout(false);
             this.grb_box.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.grb_numeros.ResumeLayout(false);
-            this.grb_paleta.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -590,11 +604,12 @@
         private System.Windows.Forms.Button btn_DarkViolet;
         private System.Windows.Forms.Button btn_linea;
         private System.Windows.Forms.GroupBox grb_letras;
-        private System.Windows.Forms.Button btn_ocho;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.GroupBox grb_numeros;
         private System.Windows.Forms.Button btn_2;
         private System.Windows.Forms.Button btn_3;
+        private System.Windows.Forms.Button btn_segLinea;
+        private System.Windows.Forms.Button creditos;
     }
 }
 
