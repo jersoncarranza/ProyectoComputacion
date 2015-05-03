@@ -7,3 +7,4 @@ c:\users\windows7\documents\visual studio 2012\Projects\27-04-2015\27-04-2015\ob
 c:\users\windows7\documents\visual studio 2012\Projects\27-04-2015\27-04-2015\obj\Debug\27-04-2015.exe
 c:\users\windows7\documents\visual studio 2012\Projects\27-04-2015\27-04-2015\obj\Debug\27-04-2015.pdb
 C:\Users\Windows7\Documents\Visual Studio 2012\Projects\27-04-2015\27-04-2015\obj\Debug\_27_04_2015.Form_ComGra.resources
+C:\Users\Windows7\Documents\Visual Studio 2012\Projects\27-04-2015\27-04-2015\obj\Debug\_27_04_2015.frm_ayuda.resources

@@ -117,6 +117,40 @@ namespace _27_04_2015
                 objCurLem.encender();
                 break;
 
+                case 8://Dos
+                    ModelosMatematicos obj_seis = new ModelosMatematicos();
+                    obj_seis.Transformar(e.X, e.Y, out fx, out fy);
+                    double rad_seis = Math.Sqrt(Math.Pow((rx - fx), 2) + Math.Pow((ry - fy), 2));
+                    Circunferencia objCurSeis = new Circunferencia(rx, ry, rad_seis, ColorBorde, Bm, Viewport);
+                    objCurSeis.Radio = rad_seis;
+                    objCurSeis.encender6();
+
+                    Segmento objn = new Segmento(rx + rad_seis, ry, rx-rad_seis, ry - (2*rad_seis), ColorBorde, Bm, Viewport);
+                    objn.encender();
+
+                    Segmento objn1 = new Segmento(rx - rad_seis, ry - (2 * rad_seis), rx + rad_seis, ry - (2*rad_seis), ColorBorde, Bm, Viewport);
+                    objn1.encender();
+                    
+                break;
+
+                case 9://Tres3
+                    ModelosMatematicos obj_tres = new ModelosMatematicos();
+                    obj_tres.Transformar(e.X, e.Y, out fx, out fy);
+                    double rad_tres = Math.Sqrt(Math.Pow((rx - fx), 2) + Math.Pow((ry - fy), 2));
+                    Circunferencia objCurTres = new Circunferencia(rx, ry, rad_tres, ColorBorde, Bm, Viewport);
+                    objCurTres.Radio = rad_tres;
+                    objCurTres.encender3();
+
+                    Segmento objn3 = new Segmento(rx , ry+rad_tres, rx+rad_tres, ry + (2 * rad_tres), ColorBorde, Bm, Viewport);
+                    objn3.encender();
+
+                    Segmento objn31 = new Segmento(rx + rad_tres, ry + (2 * rad_tres),  rx - (rad_tres/2), ry + (2 * rad_tres), ColorBorde, Bm, Viewport);
+                    objn31.encender();
+
+                
+                break;
+
+
 
                     default:
                     break;
@@ -255,6 +289,16 @@ namespace _27_04_2015
         private void btn_lemisaca_Click(object sender, EventArgs e)
         {
             Habilitado = 7;
+        }
+
+        private void btn_6_Click(object sender, EventArgs e)
+        {
+            Habilitado = 8;
+        }
+
+        private void btn_3_Click(object sender, EventArgs e)
+        {
+            Habilitado = 9;
         }
     }
 }

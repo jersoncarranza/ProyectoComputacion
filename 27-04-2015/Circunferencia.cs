@@ -46,7 +46,7 @@ namespace _27_04_2015
 
         public override void encender()
         {
-            double t = 0, dt = 0.003;
+            double t = Math.PI*0, dt = 0.003;
             Vector seg = new Vector(0, 0, scl, Sbit, Slienzo);//aki quede los parametros
             do
             {
@@ -55,40 +55,44 @@ namespace _27_04_2015
                 seg.y0 = y0 + (radio) * Math.Sin(t);
                 seg.encender();
                 t = t + dt;
-            } while (t <= 2 * 3.141516);
-
+            } while (t <= (2* Math.PI)/1);
         }
 
-       /* public override void apagar(Color c)
+
+
+        public void encender6()
         {
-            double t = 0, dt = 0.003;
+            double t = Math.PI * -1 / 2, dt = 0.003;
             Vector seg = new Vector(0, 0, scl, Sbit, Slienzo);//aki quede los parametros
             do
             {
 
                 seg.x0 = x0 + (radio) * Math.Cos(t);
                 seg.y0 = y0 + (radio) * Math.Sin(t);
-                seg.apagar(c);
+                seg.encender();
                 t = t + dt;
-            } while (t <= 2 * 3.141516);
+            } while (t <= (5 * Math.PI) / 6);
+        }
 
-        }*/
-
-
-        public void encenderDinamico()
+        public void encender3()
         {
-            double t = 0, dt = 0.003;
+            double t = Math.PI * -2 / 3, dt = 0.003;
             Vector seg = new Vector(0, 0, scl, Sbit, Slienzo);//aki quede los parametros
             do
             {
 
-                seg.x0 = x0 + (radio) * Math.Cos(tcos * t);
-                seg.y0 = y0 + (radio) * Math.Sin(tsen * t);
+                seg.x0 = x0 + (radio) * Math.Cos(t);
+                seg.y0 = y0 + (radio) * Math.Sin(t);
                 seg.encender();
                 t = t + dt;
-            } while (t <= 2 * 3.141516);
+            } while (t <= (1 * Math.PI) / 2);
+
+            //Segmento obj_seg = new Segmento();
+
 
         }
+ 
+
 
         public void apagarDinamico(Color c)
         {
@@ -97,7 +101,7 @@ namespace _27_04_2015
             do
             {
 
-                seg.x0 = x0 + (radio) * Math.Cos(tcos * t);
+                //seg.x0 = x0 + (radio) * Math.Cos(tcos * t);
                 seg.y0 = y0 + (radio) * Math.Sin(tsen * t);
                // seg.apagar(c);
                 t = t + dt;
