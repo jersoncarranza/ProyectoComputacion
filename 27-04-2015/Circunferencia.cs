@@ -86,13 +86,21 @@ namespace _27_04_2015
                 seg.encender();
                 t = t + dt;
             } while (t <= (1 * Math.PI) / 2);
-
-            //Segmento obj_seg = new Segmento();
-
-
         }
- 
 
+        public void encenderT()
+        {
+            double t = Math.PI * -6 / 6, dt = 0.003;
+            Vector seg = new Vector(0, 0, scl, Sbit, Slienzo);//aki quede los parametros
+            do
+            {
+
+                seg.x0 = x0 + (radio) * Math.Cos(t);
+                seg.y0 = y0 + (radio) * Math.Sin(t);
+                seg.encender();
+                t = t + dt;
+            } while (t <= (1 * Math.PI) / 6);
+        }
 
         public void apagarDinamico(Color c)
         {

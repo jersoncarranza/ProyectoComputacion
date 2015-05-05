@@ -71,12 +71,14 @@
             this.btn_2 = new System.Windows.Forms.Button();
             this.creditos = new System.Windows.Forms.Button();
             this.btn_plano = new System.Windows.Forms.Button();
+            this.btn_letraT = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Viewport)).BeginInit();
             this.tabControl.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.grb_paleta.SuspendLayout();
             this.grb_box.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            this.grb_letras.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.grb_numeros.SuspendLayout();
             this.SuspendLayout();
@@ -483,9 +485,10 @@
             // 
             // grb_letras
             // 
+            this.grb_letras.Controls.Add(this.btn_letraT);
             this.grb_letras.Location = new System.Drawing.Point(49, 6);
             this.grb_letras.Name = "grb_letras";
-            this.grb_letras.Size = new System.Drawing.Size(200, 100);
+            this.grb_letras.Size = new System.Drawing.Size(318, 100);
             this.grb_letras.TabIndex = 0;
             this.grb_letras.TabStop = false;
             this.grb_letras.Text = "Letra";
@@ -554,6 +557,17 @@
             this.btn_plano.UseVisualStyleBackColor = false;
             this.btn_plano.Click += new System.EventHandler(this.btn_plano_Click);
             // 
+            // btn_letraT
+            // 
+            this.btn_letraT.BackColor = System.Drawing.Color.White;
+            this.btn_letraT.Location = new System.Drawing.Point(6, 19);
+            this.btn_letraT.Name = "btn_letraT";
+            this.btn_letraT.Size = new System.Drawing.Size(25, 23);
+            this.btn_letraT.TabIndex = 0;
+            this.btn_letraT.Text = "t";
+            this.btn_letraT.UseVisualStyleBackColor = false;
+            this.btn_letraT.Click += new System.EventHandler(this.btn_letraT_Click);
+            // 
             // Form_ComGra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -574,6 +588,7 @@
             this.grb_paleta.ResumeLayout(false);
             this.grb_box.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
+            this.grb_letras.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.grb_numeros.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -624,6 +639,7 @@
         private System.Windows.Forms.Button btn_segLinea;
         private System.Windows.Forms.Button creditos;
         private System.Windows.Forms.Button btn_plano;
+        private System.Windows.Forms.Button btn_letraT;
     }
 }
 

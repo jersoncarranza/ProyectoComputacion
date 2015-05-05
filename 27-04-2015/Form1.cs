@@ -147,9 +147,8 @@ namespace _27_04_2015
 
                     Segmento objn31 = new Segmento(rx + rad_tres, ry + (2 * rad_tres),  rx - (rad_tres/2), ry + (2 * rad_tres), ColorBorde, Bm, Viewport);
                     objn31.encender();
-
-                
                 break;
+
                 case 10:
                     //Dibuja la linea
                     ModelosMatematicos objSegPen = new ModelosMatematicos();
@@ -188,6 +187,24 @@ namespace _27_04_2015
                     objpab.encender();
                     //objsegpend.encender();
                 break;
+
+               case 11://Tres3
+                    ModelosMatematicos obj_T = new ModelosMatematicos();
+                    obj_T.Transformar(e.X, e.Y, out fx, out fy);
+                    double rad_T = Math.Sqrt(Math.Pow((rx - fx), 2) + Math.Pow((ry - fy), 2));
+                    //dibuja la bomba
+                    Circunferencia objrad_T = new Circunferencia(rx, ry, rad_T, ColorBorde, Bm, Viewport);
+                    objrad_T.Radio = rad_T;
+                    objrad_T.encenderT();
+                    //dibuja la Linea de la Te Vertical
+                    Segmento objLTV = new Segmento(rx - rad_T, ry, rx - rad_T, ry + (3 * rad_T), ColorBorde, Bm, Viewport);
+                    objLTV.encender();
+                    //dibuja la linea Te Horizontal
+                    Segmento objLTH = new Segmento(rx - (2 * rad_T), ry + (2 * rad_T), rx , ry + (2 * rad_T), ColorBorde, Bm, Viewport);
+                    objLTH.encender();
+                    
+                break;
+
                 
                 default:
                 break;
@@ -364,6 +381,11 @@ namespace _27_04_2015
                 Viewport.Image = null;
                 ban = 1;
             }
+        }
+
+        private void btn_letraT_Click(object sender, EventArgs e)
+        {
+            Habilitado = 11;
         }
 
       
