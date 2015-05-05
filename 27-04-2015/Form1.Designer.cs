@@ -61,6 +61,7 @@
             this.btn_azul = new System.Windows.Forms.Button();
             this.btn_ColorBlanco = new System.Windows.Forms.Button();
             this.grb_box = new System.Windows.Forms.GroupBox();
+            this.btn_segLinea = new System.Windows.Forms.Button();
             this.btn_linea = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.grb_letras = new System.Windows.Forms.GroupBox();
@@ -68,8 +69,8 @@
             this.grb_numeros = new System.Windows.Forms.GroupBox();
             this.btn_3 = new System.Windows.Forms.Button();
             this.btn_2 = new System.Windows.Forms.Button();
-            this.btn_segLinea = new System.Windows.Forms.Button();
             this.creditos = new System.Windows.Forms.Button();
+            this.btn_plano = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Viewport)).BeginInit();
             this.tabControl.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -425,6 +426,7 @@
             // 
             // grb_box
             // 
+            this.grb_box.Controls.Add(this.btn_plano);
             this.grb_box.Controls.Add(this.btn_pixel);
             this.grb_box.Controls.Add(this.btn_segLinea);
             this.grb_box.Controls.Add(this.btn_estrellla);
@@ -439,6 +441,17 @@
             this.grb_box.TabIndex = 10;
             this.grb_box.TabStop = false;
             this.grb_box.Text = "figuras";
+            // 
+            // btn_segLinea
+            // 
+            this.btn_segLinea.BackColor = System.Drawing.Color.White;
+            this.btn_segLinea.Location = new System.Drawing.Point(217, 71);
+            this.btn_segLinea.Name = "btn_segLinea";
+            this.btn_segLinea.Size = new System.Drawing.Size(42, 32);
+            this.btn_segLinea.TabIndex = 11;
+            this.btn_segLinea.Text = "-/-";
+            this.btn_segLinea.UseVisualStyleBackColor = false;
+            this.btn_segLinea.Click += new System.EventHandler(this.btn_segLinea_Click);
             // 
             // btn_linea
             // 
@@ -520,17 +533,6 @@
             this.btn_2.UseVisualStyleBackColor = false;
             this.btn_2.Click += new System.EventHandler(this.btn_6_Click);
             // 
-            // btn_segLinea
-            // 
-            this.btn_segLinea.BackColor = System.Drawing.Color.White;
-            this.btn_segLinea.Location = new System.Drawing.Point(217, 71);
-            this.btn_segLinea.Name = "btn_segLinea";
-            this.btn_segLinea.Size = new System.Drawing.Size(42, 32);
-            this.btn_segLinea.TabIndex = 11;
-            this.btn_segLinea.Text = "-/-";
-            this.btn_segLinea.UseVisualStyleBackColor = false;
-            this.btn_segLinea.Click += new System.EventHandler(this.btn_segLinea_Click);
-            // 
             // creditos
             // 
             this.creditos.Location = new System.Drawing.Point(977, 578);
@@ -540,6 +542,17 @@
             this.creditos.Text = "Creditos";
             this.creditos.UseVisualStyleBackColor = true;
             this.creditos.Click += new System.EventHandler(this.creditos_Click);
+            // 
+            // btn_plano
+            // 
+            this.btn_plano.BackColor = System.Drawing.Color.White;
+            this.btn_plano.Location = new System.Drawing.Point(165, 19);
+            this.btn_plano.Name = "btn_plano";
+            this.btn_plano.Size = new System.Drawing.Size(46, 46);
+            this.btn_plano.TabIndex = 13;
+            this.btn_plano.Text = "-|- \r\n\r\n";
+            this.btn_plano.UseVisualStyleBackColor = false;
+            this.btn_plano.Click += new System.EventHandler(this.btn_plano_Click);
             // 
             // Form_ComGra
             // 
@@ -610,6 +623,7 @@
         private System.Windows.Forms.Button btn_3;
         private System.Windows.Forms.Button btn_segLinea;
         private System.Windows.Forms.Button creditos;
+        private System.Windows.Forms.Button btn_plano;
     }
 }
 

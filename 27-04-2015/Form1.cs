@@ -24,6 +24,7 @@ namespace _27_04_2015
         double fy;   //final
         double fx;   //final
 
+        int ban=1;//bandera plano cartesiano
 
         public Form_ComGra()
         {
@@ -33,7 +34,7 @@ namespace _27_04_2015
             Viewport.Image = Bm;
             
             ColorBorde = Color.Black ;
-
+           // ban = 1;//bandera plano varetesiano
             //eventos para ke el mouse pueda seleccionar una coordenada
             Viewport.MouseDown += new MouseEventHandler(Viewport_MouseDown);
             Viewport.MouseUp += new MouseEventHandler(Viewport_MouseUp);
@@ -186,16 +187,10 @@ namespace _27_04_2015
                     Segmento objpab = new Segmento(rxa, rya, fxa, fya, ColorBorde, Bm, Viewport);
                     objpab.encender();
                     //objsegpend.encender();
-
-                   
-
-
                 break;
-
-
-
-                    default:
-                    break;
+                
+                default:
+                break;
             }
 
 
@@ -352,6 +347,23 @@ namespace _27_04_2015
         {
             frm_ayuda frm = new frm_ayuda();
             frm.Show();
+        }
+
+        private void btn_plano_Click(object sender, EventArgs e)
+        {
+            if (ban == 1)
+            {
+                Segmento s_plax = new Segmento(-15, 0, 15, 0, Color.Blue, Bm , Viewport);//linea horizontal
+                Segmento s_play = new Segmento(0, 10, 0, -10, Color.Blue, Bm, Viewport);//linea vertical
+                s_plax.encender();
+                s_play.encender();
+                ban = 0;
+            }
+            else
+            {
+                Viewport.Image = null;
+                ban = 1;
+            }
         }
 
       
