@@ -205,7 +205,34 @@ namespace _27_04_2015
                     
                 break;
 
-                
+               case 12://8
+                    ModelosMatematicos obj_8 = new ModelosMatematicos();
+                    obj_8.Transformar(e.X, e.Y, out fx, out fy);
+                    double rad_8 = Math.Sqrt(Math.Pow((rx - fx), 2) + Math.Pow((ry - fy), 2));
+                    //dibuja la circunferencia mas grande
+                    Circunferencia c1 = new Circunferencia(rx, ry, rad_8, ColorBorde, Bm , Viewport);
+                    //dibuja la circunferencia mas grande
+                    Circunferencia c2 = new Circunferencia(rx, ry + rad_8 +(rad_8/2), (rad_8/2), ColorBorde, Bm, Viewport);
+                    c1.encender();
+                    c2.encender();
+
+                break;
+
+               case 13://cuadrado 
+                     ModelosMatematicos obj_cua = new ModelosMatematicos();
+                    obj_cua.Transformar(e.X, e.Y, out fx, out fy);
+                    double rad_Cua = Math.Sqrt(Math.Pow((rx - fx), 2) + Math.Pow((ry - fy), 2));
+                    
+                    Segmento obj_Cua1 = new Segmento(rx, ry , rx , ry + rad_Cua , ColorBorde, Bm, Viewport);
+                    Segmento obj_Cua2 = new Segmento(rx, ry, rx + rad_Cua, ry, ColorBorde, Bm, Viewport);
+                    Segmento obj_Cua3 = new Segmento(rx + rad_Cua, ry, rx + rad_Cua, ry + rad_Cua, ColorBorde, Bm, Viewport);
+                    Segmento obj_Cua4 = new Segmento(rx , ry+rad_Cua, rx + rad_Cua, ry + rad_Cua, ColorBorde, Bm, Viewport);
+                     obj_Cua1.encender();
+                     obj_Cua2.encender();
+                     obj_Cua3.encender();
+                     obj_Cua4.encender();
+               break;
+ 
                 default:
                 break;
             }
@@ -386,6 +413,16 @@ namespace _27_04_2015
         private void btn_letraT_Click(object sender, EventArgs e)
         {
             Habilitado = 11;
+        }
+
+        private void btn_8_Click(object sender, EventArgs e)
+        {
+            Habilitado = 12;
+        }
+
+        private void btn_cuadrado_Click(object sender, EventArgs e)
+        {
+            Habilitado = 13;
         }
 
       

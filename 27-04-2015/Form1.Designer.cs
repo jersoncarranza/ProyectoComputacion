@@ -72,6 +72,8 @@
             this.creditos = new System.Windows.Forms.Button();
             this.btn_plano = new System.Windows.Forms.Button();
             this.btn_letraT = new System.Windows.Forms.Button();
+            this.btn_8 = new System.Windows.Forms.Button();
+            this.btn_cuadrado = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Viewport)).BeginInit();
             this.tabControl.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -171,7 +173,7 @@
             // btn_EligirColor
             // 
             this.btn_EligirColor.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_EligirColor.BackgroundImage")));
-            this.btn_EligirColor.Location = new System.Drawing.Point(184, 27);
+            this.btn_EligirColor.Location = new System.Drawing.Point(6, 211);
             this.btn_EligirColor.Name = "btn_EligirColor";
             this.btn_EligirColor.Size = new System.Drawing.Size(40, 40);
             this.btn_EligirColor.TabIndex = 7;
@@ -208,8 +210,7 @@
             // tabPage1
             // 
             this.tabPage1.AccessibleRole = System.Windows.Forms.AccessibleRole.Window;
-            this.tabPage1.BackColor = System.Drawing.Color.Gray;
-            this.tabPage1.Controls.Add(this.grb_paleta);
+            this.tabPage1.BackColor = System.Drawing.SystemColors.Control;
             this.tabPage1.Controls.Add(this.grb_box);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
@@ -220,6 +221,7 @@
             // 
             // grb_paleta
             // 
+            this.grb_paleta.BackColor = System.Drawing.SystemColors.Control;
             this.grb_paleta.Controls.Add(this.btn_DarkViolet);
             this.grb_paleta.Controls.Add(this.btn_EligirColor);
             this.grb_paleta.Controls.Add(this.btn_RoyalBlue);
@@ -239,9 +241,9 @@
             this.grb_paleta.Controls.Add(this.btn_silver);
             this.grb_paleta.Controls.Add(this.btn_azul);
             this.grb_paleta.Controls.Add(this.btn_ColorBlanco);
-            this.grb_paleta.Location = new System.Drawing.Point(387, 18);
+            this.grb_paleta.Location = new System.Drawing.Point(18, 195);
             this.grb_paleta.Name = "grb_paleta";
-            this.grb_paleta.Size = new System.Drawing.Size(233, 100);
+            this.grb_paleta.Size = new System.Drawing.Size(57, 276);
             this.grb_paleta.TabIndex = 12;
             this.grb_paleta.TabStop = false;
             this.grb_paleta.Text = "Paleta de Colores";
@@ -249,7 +251,7 @@
             // btn_DarkViolet
             // 
             this.btn_DarkViolet.BackColor = System.Drawing.Color.DarkViolet;
-            this.btn_DarkViolet.Location = new System.Drawing.Point(158, 27);
+            this.btn_DarkViolet.Location = new System.Drawing.Point(25, 175);
             this.btn_DarkViolet.Name = "btn_DarkViolet";
             this.btn_DarkViolet.Size = new System.Drawing.Size(20, 20);
             this.btn_DarkViolet.TabIndex = 28;
@@ -259,7 +261,7 @@
             // btn_RoyalBlue
             // 
             this.btn_RoyalBlue.BackColor = System.Drawing.Color.RoyalBlue;
-            this.btn_RoyalBlue.Location = new System.Drawing.Point(139, 27);
+            this.btn_RoyalBlue.Location = new System.Drawing.Point(25, 159);
             this.btn_RoyalBlue.Name = "btn_RoyalBlue";
             this.btn_RoyalBlue.Size = new System.Drawing.Size(20, 20);
             this.btn_RoyalBlue.TabIndex = 27;
@@ -269,7 +271,7 @@
             // btn_Green
             // 
             this.btn_Green.BackColor = System.Drawing.Color.Green;
-            this.btn_Green.Location = new System.Drawing.Point(120, 27);
+            this.btn_Green.Location = new System.Drawing.Point(25, 139);
             this.btn_Green.Name = "btn_Green";
             this.btn_Green.Size = new System.Drawing.Size(20, 20);
             this.btn_Green.TabIndex = 26;
@@ -279,7 +281,7 @@
             // button6
             // 
             this.button6.BackColor = System.Drawing.Color.Yellow;
-            this.button6.Location = new System.Drawing.Point(101, 27);
+            this.button6.Location = new System.Drawing.Point(25, 120);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(20, 20);
             this.button6.TabIndex = 25;
@@ -289,7 +291,7 @@
             // btn_NavajoWhite
             // 
             this.btn_NavajoWhite.BackColor = System.Drawing.Color.NavajoWhite;
-            this.btn_NavajoWhite.Location = new System.Drawing.Point(82, 27);
+            this.btn_NavajoWhite.Location = new System.Drawing.Point(25, 101);
             this.btn_NavajoWhite.Name = "btn_NavajoWhite";
             this.btn_NavajoWhite.Size = new System.Drawing.Size(20, 20);
             this.btn_NavajoWhite.TabIndex = 24;
@@ -299,7 +301,7 @@
             // btn_red
             // 
             this.btn_red.BackColor = System.Drawing.Color.Red;
-            this.btn_red.Location = new System.Drawing.Point(63, 27);
+            this.btn_red.Location = new System.Drawing.Point(25, 84);
             this.btn_red.Name = "btn_red";
             this.btn_red.Size = new System.Drawing.Size(20, 20);
             this.btn_red.TabIndex = 23;
@@ -309,7 +311,7 @@
             // btn_Maroon
             // 
             this.btn_Maroon.BackColor = System.Drawing.Color.Maroon;
-            this.btn_Maroon.Location = new System.Drawing.Point(44, 27);
+            this.btn_Maroon.Location = new System.Drawing.Point(25, 63);
             this.btn_Maroon.Name = "btn_Maroon";
             this.btn_Maroon.Size = new System.Drawing.Size(20, 20);
             this.btn_Maroon.TabIndex = 22;
@@ -319,7 +321,7 @@
             // btn_DimGray
             // 
             this.btn_DimGray.BackColor = System.Drawing.Color.DimGray;
-            this.btn_DimGray.Location = new System.Drawing.Point(25, 27);
+            this.btn_DimGray.Location = new System.Drawing.Point(25, 46);
             this.btn_DimGray.Name = "btn_DimGray";
             this.btn_DimGray.Size = new System.Drawing.Size(20, 20);
             this.btn_DimGray.TabIndex = 21;
@@ -329,7 +331,7 @@
             // button5
             // 
             this.button5.BackColor = System.Drawing.Color.Black;
-            this.button5.Location = new System.Drawing.Point(6, 27);
+            this.button5.Location = new System.Drawing.Point(25, 27);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(20, 20);
             this.button5.TabIndex = 20;
@@ -339,7 +341,7 @@
             // btn_Turquoise
             // 
             this.btn_Turquoise.BackColor = System.Drawing.Color.Turquoise;
-            this.btn_Turquoise.Location = new System.Drawing.Point(139, 46);
+            this.btn_Turquoise.Location = new System.Drawing.Point(6, 159);
             this.btn_Turquoise.Name = "btn_Turquoise";
             this.btn_Turquoise.Size = new System.Drawing.Size(20, 20);
             this.btn_Turquoise.TabIndex = 19;
@@ -349,7 +351,7 @@
             // btn_PaleGreen
             // 
             this.btn_PaleGreen.BackColor = System.Drawing.Color.PaleGreen;
-            this.btn_PaleGreen.Location = new System.Drawing.Point(120, 46);
+            this.btn_PaleGreen.Location = new System.Drawing.Point(6, 139);
             this.btn_PaleGreen.Name = "btn_PaleGreen";
             this.btn_PaleGreen.Size = new System.Drawing.Size(20, 20);
             this.btn_PaleGreen.TabIndex = 18;
@@ -359,7 +361,7 @@
             // btn_Khaki
             // 
             this.btn_Khaki.BackColor = System.Drawing.Color.Khaki;
-            this.btn_Khaki.Location = new System.Drawing.Point(101, 46);
+            this.btn_Khaki.Location = new System.Drawing.Point(6, 120);
             this.btn_Khaki.Name = "btn_Khaki";
             this.btn_Khaki.Size = new System.Drawing.Size(20, 20);
             this.btn_Khaki.TabIndex = 17;
@@ -369,7 +371,7 @@
             // btn_DarkOrange
             // 
             this.btn_DarkOrange.BackColor = System.Drawing.Color.DarkOrange;
-            this.btn_DarkOrange.Location = new System.Drawing.Point(82, 46);
+            this.btn_DarkOrange.Location = new System.Drawing.Point(6, 101);
             this.btn_DarkOrange.Name = "btn_DarkOrange";
             this.btn_DarkOrange.Size = new System.Drawing.Size(20, 20);
             this.btn_DarkOrange.TabIndex = 16;
@@ -379,7 +381,7 @@
             // btn_LightSalmon
             // 
             this.btn_LightSalmon.BackColor = System.Drawing.Color.LightSalmon;
-            this.btn_LightSalmon.Location = new System.Drawing.Point(63, 46);
+            this.btn_LightSalmon.Location = new System.Drawing.Point(6, 84);
             this.btn_LightSalmon.Name = "btn_LightSalmon";
             this.btn_LightSalmon.Size = new System.Drawing.Size(20, 20);
             this.btn_LightSalmon.TabIndex = 15;
@@ -389,7 +391,7 @@
             // btn_Sienna
             // 
             this.btn_Sienna.BackColor = System.Drawing.Color.Sienna;
-            this.btn_Sienna.Location = new System.Drawing.Point(44, 46);
+            this.btn_Sienna.Location = new System.Drawing.Point(6, 63);
             this.btn_Sienna.Name = "btn_Sienna";
             this.btn_Sienna.Size = new System.Drawing.Size(20, 20);
             this.btn_Sienna.TabIndex = 14;
@@ -399,9 +401,9 @@
             // btn_silver
             // 
             this.btn_silver.BackColor = System.Drawing.Color.Silver;
-            this.btn_silver.Location = new System.Drawing.Point(25, 46);
+            this.btn_silver.Location = new System.Drawing.Point(6, 45);
             this.btn_silver.Name = "btn_silver";
-            this.btn_silver.Size = new System.Drawing.Size(20, 20);
+            this.btn_silver.Size = new System.Drawing.Size(20, 21);
             this.btn_silver.TabIndex = 13;
             this.btn_silver.UseVisualStyleBackColor = false;
             this.btn_silver.Click += new System.EventHandler(this.btn_silver_Click);
@@ -409,7 +411,7 @@
             // btn_azul
             // 
             this.btn_azul.BackColor = System.Drawing.Color.Blue;
-            this.btn_azul.Location = new System.Drawing.Point(158, 46);
+            this.btn_azul.Location = new System.Drawing.Point(6, 175);
             this.btn_azul.Name = "btn_azul";
             this.btn_azul.Size = new System.Drawing.Size(20, 20);
             this.btn_azul.TabIndex = 12;
@@ -419,7 +421,7 @@
             // btn_ColorBlanco
             // 
             this.btn_ColorBlanco.BackColor = System.Drawing.Color.White;
-            this.btn_ColorBlanco.Location = new System.Drawing.Point(6, 46);
+            this.btn_ColorBlanco.Location = new System.Drawing.Point(6, 27);
             this.btn_ColorBlanco.Name = "btn_ColorBlanco";
             this.btn_ColorBlanco.Size = new System.Drawing.Size(20, 20);
             this.btn_ColorBlanco.TabIndex = 11;
@@ -428,6 +430,7 @@
             // 
             // grb_box
             // 
+            this.grb_box.Controls.Add(this.btn_cuadrado);
             this.grb_box.Controls.Add(this.btn_plano);
             this.grb_box.Controls.Add(this.btn_pixel);
             this.grb_box.Controls.Add(this.btn_segLinea);
@@ -471,7 +474,7 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.BackColor = System.Drawing.Color.Gray;
+            this.tabPage2.BackColor = System.Drawing.SystemColors.Control;
             this.tabPage2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.tabPage2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.tabPage2.Controls.Add(this.grb_letras);
@@ -505,6 +508,7 @@
             // 
             // grb_numeros
             // 
+            this.grb_numeros.Controls.Add(this.btn_8);
             this.grb_numeros.Controls.Add(this.btn_3);
             this.grb_numeros.Controls.Add(this.btn_2);
             this.grb_numeros.Location = new System.Drawing.Point(20, 23);
@@ -568,12 +572,35 @@
             this.btn_letraT.UseVisualStyleBackColor = false;
             this.btn_letraT.Click += new System.EventHandler(this.btn_letraT_Click);
             // 
+            // btn_8
+            // 
+            this.btn_8.BackColor = System.Drawing.Color.White;
+            this.btn_8.Location = new System.Drawing.Point(146, 19);
+            this.btn_8.Name = "btn_8";
+            this.btn_8.Size = new System.Drawing.Size(23, 23);
+            this.btn_8.TabIndex = 2;
+            this.btn_8.Text = "8";
+            this.btn_8.UseVisualStyleBackColor = false;
+            this.btn_8.Click += new System.EventHandler(this.btn_8_Click);
+            // 
+            // btn_cuadrado
+            // 
+            this.btn_cuadrado.BackColor = System.Drawing.Color.White;
+            this.btn_cuadrado.Location = new System.Drawing.Point(213, 19);
+            this.btn_cuadrado.Name = "btn_cuadrado";
+            this.btn_cuadrado.Size = new System.Drawing.Size(46, 46);
+            this.btn_cuadrado.TabIndex = 14;
+            this.btn_cuadrado.Text = "◘";
+            this.btn_cuadrado.UseVisualStyleBackColor = false;
+            this.btn_cuadrado.Click += new System.EventHandler(this.btn_cuadrado_Click);
+            // 
             // Form_ComGra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(1064, 613);
+            this.Controls.Add(this.grb_paleta);
             this.Controls.Add(this.creditos);
             this.Controls.Add(this.tabControl);
             this.Controls.Add(this.todo);
@@ -640,6 +667,8 @@
         private System.Windows.Forms.Button creditos;
         private System.Windows.Forms.Button btn_plano;
         private System.Windows.Forms.Button btn_letraT;
+        private System.Windows.Forms.Button btn_8;
+        private System.Windows.Forms.Button btn_cuadrado;
     }
 }
 
